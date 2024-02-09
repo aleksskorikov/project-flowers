@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/resets.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./scripts/jqueri.js" defer></script>
+    <script src="./scripts/slick.min.js" defer></script>
+    <script src="./scripts/script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="conteiner">
+            <div class="header">
+                <div class="header__logo">
+                    <img src="./images/logo/heder logo.svg" alt="logo" class="header__logo-img">
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__nav-lists">
+                        <li class="header__nav-list"><a href="#" class="header__nav-linc">Головна</a></li>
+                        <li class="header__nav-list"><a href="#" class="header__nav-linc">Каталог</a></li>
+                        <li class="header__nav-list"><a href="#" class="header__nav-linc">Про нас</a></li>
+                        <li class="header__nav-list"><a href="#" class="header__nav-linc">Як замовити</a></li>
+                        <li class="header__nav-list"><a href="#" class="header__nav-linc">Відгуки</a></li>
+                        <li class="header__nav-list"><a href="#" class="header__nav-linc">Контакти</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="conteiner">
+            <section class="one">   
+                <div class="section__title">
+                    <p class="section__title-subtitle">Неймовірні</p>
+                    <h1 class="section__title-title">Букети<span class="section__title-subtitle ">зі свіжих квітів</span></h1>
+                    <p class="section__title-text">З доставкою по Києву протягом 1 години</p>
+                    <button class="section__title-btn">ЗАМОВИТИ КВІТИ</button>
+                </div>
+                <div class="section__foto">
+                    <img src="./images/logo/Ellipse 4.svg" alt="foto-circle" class="section__foto-circle">
+                    <img src="./images/logo/11111.svg" alt="foto-flowers" class="section__foto-flowers">
+                </div>
+                <div class="section__services">
+                    <div class="section__service">
+                        <img src="./images/logo/servis logo 1.svg" alt="services-logo" class="section__services-logo">
+                        <p class="section__services-text">Щоденне оновлення свіжих квітів</p>
+                    </div>
+                    <div class="section__service">
+                        <img src="./images/logo/servis logo 2.svg" alt="services-logo" class="section__services-logo">
+                        <p class="section__services-text">безкоштовна доставка в будь яку точку міста</p>
+                    </div>
+                    <div class="section__service">
+                        <img src="./images/logo/servis logo 3.svg" alt="services-logo" class="section__services-logo">
+                        <p class="section__services-text">більше 1000 сортів квітів з усього світу</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="section__catalog">
+                <h2 class="section__catalog-title">Каталог</h2>
+                <div class="section__catalog-division"></div>
+                <div class="catalog__products-conteiner">
+                    <div class="catalog__products-block">
+                        <div class="catalog__products-menu">
+                            <h2 class="products__menu-title">Доставка квітів в Києві</h2>
+                            <div class="products__menu">
+                                <div class="products__menu-items" data-itemsName="price">
+                                    <p class="products__menu-text">Ціна ...</p>
+                                    <img src="./images/logo/arrow-down.svg" alt="arrow" class="products__menu-arrow">
+                                    <div class="products__dropmenu" data-dropmenuName="price">
+                                        <img src="./images/logo/drop close_.svg" alt="drop close" class="products__dropmenu-close" data-closeName="price">
+                                        <form class="products__dropmenu-form">
+                                            <input id="200" type="radio" value="&#60 200 ₴" name="price" class="dropmenu__form-input">
+                                            <label for="200" class="dropmenu__form-label"> &#60 200 ₴</label>
+                                            <div class="dropmenu__form-division"></div>
+                                            <input id="500" type="radio" value="200 - 500 ₴" name="price" class="dropmenu__form-input">
+                                            <label for="500" class="dropmenu__form-label">200 - 500 ₴</label>
+                                            <div class="dropmenu__form-division"></div>
+                                            <input id="1000" type="radio" value="&#62 1000 ₴" name="price" class="dropmenu__form-input">
+                                            <label for="1000" class="dropmenu__form-label">&#62 1000 ₴</label>
+                                            <div class="dropmenu__form-division"></div>
+                                        </form>
+                                        <button class="dropmenu__form-btn" data-category="price">Застосувати</button>
+                                    </div>
+                                </div>
+                                <div class="products__menu-vl"></div>
+                                <div class="products__menu-items" data-itemsName="flowers">
+                                    <p class="products__menu-text">Квіти ...</p>
+                                    <img src="./images/logo/arrow-down.svg" alt="arrow" class="products__menu-arrow">
+                                    <div class="products__dropmenu" data-dropmenuName="flowers">
+                                        <img src="./images/logo/drop close_.svg" alt="drop close" class="products__dropmenu-close" data-closeName="flowers">
+                                        <form class="products__dropmenu-form">
+                                            <input id="4" type="radio" name="flowers" value="Троянда" class="dropmenu__form-input">
+                                            <label for="4" class="dropmenu__form-label">Троянда</label>
+                                            <div class="dropmenu__form-division"></div>
+                                            <input id="5" type="radio" name="flowers" value="Еустома" class="dropmenu__form-input">
+                                            <label for="5" class="dropmenu__form-label">Еустома</label>
+                                            <div class="dropmenu__form-division"></div>
+                                            <input id="6" type="radio" name="flowers" value="Хризантема" class="dropmenu__form-input">
+                                            <label for="6" class="dropmenu__form-label">Хризантема</label>
+                                            <div class="dropmenu__form-division"></div>
+                                            <input id="7" type="radio" name="flowers" value="Лілія" class="dropmenu__form-input">
+                                            <label for="7" class="dropmenu__form-label">Лілія</label>
+                                            <div class="dropmenu__form-division"></div>
+                                            <input id="8" type="radio" name="flowers" value="Тюльпан" class="dropmenu__form-input">
+                                            <label for="8" class="dropmenu__form-label">Тюльпан</label>
+                                            <div class="dropmenu__form-division"></div>
+                                            <input id="9" type="radio" name="flowers" value="Гортензія" class="dropmenu__form-input">
+                                            <label for="9" class="dropmenu__form-label">Гортензія</label>
+                                            <div class="dropmenu__form-division"></div>
+                                            <input id="10" type="radio" name="flowers" value="Гортензія" class="dropmenu__form-input">
+                                            <label for="10" class="dropmenu__form-label">Гортензія</label>
+                                            <div class="dropmenu__form-division" ></div>
+                                        </form>
+                                        <button class="dropmenu__form-btn"data-category="flowers">Застосувати</button>
+                                    </div>
+                                </div>
+                                <div class="products__menu-vl"></div>
+                                <div class="products__menu-items" data-itemsName="to whom">
+                                    <p class="products__menu-text">Кому ...</p>
+                                    <img src="./images/logo/arrow-down.svg" alt="arrow" class="products__menu-arrow">
+                                    <div class="products__dropmenu" data-dropmenuName="to whom">
+                                        <img src="./images/logo/drop close_.svg" alt="drop close" class="products__dropmenu-close" data-closeName="to whom">
+                                        <form class="products__dropmenu-form">
+                                            <input id="women" type="radio" name="to whom" value="Жінці" class="dropmenu__form-input">
+                                            <label for="women" class="dropmenu__form-label">Жінці</label>
+                                            <div class="dropmenu__form-division"></div>
+                                            <input id="men" type="radio" name="to whom" value="Чоловіку" class="dropmenu__form-input">
+                                            <label for="men" class="dropmenu__form-label">Чоловіку</label>
+                                            <div class="dropmenu__form-division"></div>
+                                        </form>
+                                        <button class="dropmenu__form-btn" data-category="to whom">Застосувати</button>
+                                    </div>
+                                </div>
+                                <div class="products__menu-vl"></div>
+                                <div class="products__menu-items" data-itemsName="occasion">
+                                    <p class="products__menu-text">Привід...</p>
+                                    <img src="./images/logo/arrow-down.svg" alt="arrow" class="products__menu-arrow">
+                                    <div class="products__dropmenu" data-dropmenuName="occasion">
+                                        <img src="./images/logo/drop close_.svg" alt="drop close" class="products__dropmenu-close" data-closeName="occasion">
+                                        <form class="products__dropmenu-form">
+                                            <input id="11" type="radio" name="occasion" value="День народження" class="dropmenu__form-input">
+                                            <label for="11" class="dropmenu__form-label">День народження</label>
+                                            <div class="dropmenu__form-division"></div>
+                                            <input id="12" type="radio" name="occasion" value="Весілля" class="dropmenu__form-input">
+                                            <label for="12" class="dropmenu__form-label">Весілля</label>
+                                            <div class="dropmenu__form-division"></div>
+                                            <input id="13" type="radio" name="occasion" value="Кохання" class="dropmenu__form-input">
+                                            <label for="13" class="dropmenu__form-label">Кохання</label>
+                                            <div class="dropmenu__form-division"></div>
+                                            <input id="14" type="radio" name="occasion" value="Співчуваю" class="dropmenu__form-input">
+                                            <label for="14" class="dropmenu__form-label">Співчуваю</label>
+                                            <div class="dropmenu__form-division"></div>    
+                                        </form>
+                                        <button class="dropmenu__form-btn"data-category="occasion">Застосувати</button>
+                                    </div>
+                                </div>
+                                <div class="products__menu-vl"></div>
+                                <div class="products__menu-items" data-itemsName="style">
+                                    <p class="products__menu-text">Стиль ...</p>
+                                    <img src="./images/logo/arrow-down.svg" alt="arrow" class="products__menu-arrow">
+                                    <div class="products__dropmenu" data-dropmenuName="style">
+                                <img src="./images/logo/drop close_.svg" alt="drop close" class="products__dropmenu-close" data-closeName="style">
+                                <form class="products__dropmenu-form">
+                                    <input id="15" type="radio" name="style" value="Вільний" class="dropmenu__form-input">
+                                    <label for="15" class="dropmenu__form-label">Вільний</label>
+                                    <div class="dropmenu__form-division"></div>
+                                    <input id="16" type="radio" name="style" value="Каркасний" class="dropmenu__form-input">
+                                    <label for="16" class="dropmenu__form-label">Каркасний</label>
+                                    <div class="dropmenu__form-division"></div>
+                                    <input id="17" type="radio" name="style" value="В коробці" class="dropmenu__form-input">
+                                    <label for="17" class="dropmenu__form-label">В коробці</label>
+                                    <div class="dropmenu__form-division"></div>
+                                    <input id="18" type="radio" name="style" value="В кошику" class="dropmenu__form-input">
+                                    <label for="18" class="dropmenu__form-label">В кошику</label>
+                                    <div class="dropmenu__form-division"></div>
+                                    <input id="19" type="radio" name="style" value="Каскадний" class="dropmenu__form-input">
+                                    <label for="19" class="dropmenu__form-label">Каскадний</label>
+                                    <div class="dropmenu__form-division"></div>
+                                </form>
+                                <button class="dropmenu__form-btn"data-category="style">Застосувати</button>
+                            </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__products">
+                        <h2 class="products__products-title">Хіт продажів</h2>
+                        <div class="products__block">
+                            <div class="products__block-product">
+                                <div class="block__product-foto">
+                                    <img src="./images/logo/product 1.svg" alt="foto" class="block__product-img">
+                                    <img src="./images/logo/heart.svg" alt="foto heart" class="block__product-like">
+                                </div>
+                                <div class="block__product-info">
+                                    <div class="product__info-promotion product__info-activ">Акція</div>
+                                    <div class="product__info-new">Новинка</div>
+                                    <div class="product__info-water">З водою</div>
+                                </div>
+                                
+                                <div class="block__product-wrapper">
+                                    <p class="block__product-price">500 ₴</p>
+                                    <p class="block__product-text">Мінібукет 1400-2</p>
+                                </div>
+                                <div class="block__product-hover">
+                                    <div class="product__hover">
+                                    <p class="product__hover-text">Хрезантема - 6  шт. (50 см.),  Троянда міні  - 4 шт., </p>
+                                    </div>
+                                    <div class="product__hover-input">
+                                        <button class="hover__input-prev" id="decreaseBtn" data-counter="counter1">-</button>
+                                        <div class="hover__input-quantity"id="counter1">0</div>
+                                        <button class="hover__input-next" id="increaseBtn" data-counter="counter1">+</button>
+                                    <button class="product__hover-btn">Замовити</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products__block-product">
+                                <div class="block__product-foto">
+                                    <img src="./images/img/product 2.svg" alt="foto" class="block__product-img">
+                                    <img src="./images/logo/heart.svg" alt="foto heart" class="block__product-like">
+                                </div>
+                                <div class="block__product-info">
+                                    <div class="product__info-promotion ">Акція</div>
+                                    <div class="product__info-new">Новинка</div>
+                                    <div class="product__info-water">З водою</div>
+                                </div>
+                                <div class="block__product-wrapper">
+                                    <p class="block__product-price">800 ₴</p>
+                                    <p class="block__product-text">Мінібукет 1600-6</p>
+                                </div>
+                                <div class="block__product-hover">
+                                    <div class="product__hover">
+                                        <p class="product__hover-text">Хрезантема - 6 шт. (50 см.),  Троянда міні - 4 шт., </p>
+                                    </div>
+                                    <div class="product__hover-input">
+                                        <button class="hover__input-prev" id="decreaseBtn" data-counter="counter2">-</button>
+                                        <div class="hover__input-quantity"id="counter2">0</div>
+                                        <button class="hover__input-next" id="increaseBtn" data-counter="counter2">+</button>
+                                        <button class="product__hover-btn">Замовити</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products__block-product">
+                                <div class="block__product-foto">
+                                    <img src="./images/img/product 3.svg" alt="foto" class="block__product-img">
+                                    <img src="./images/logo/heart.svg" alt="foto heart" class="block__product-like">
+                                </div>
+                                <div class="block__product-info">
+                                    <div class="product__info-promotion ">Акція</div>
+                                    <div class="product__info-new">Новинка</div>
+                                    <div class="product__info-water">З водою</div>
+                                </div>
+                                <div class="block__product-wrapper">
+                                    <p class="block__product-price">1000 ₴</p>
+                                    <p class="block__product-text">Троянда Freedom 51 шт.</p>
+                                </div>
+                                <div class="block__product-hover">
+                                    <div class="product__hover">
+                                        <p class="product__hover-text">Хрезантема - 6 шт. (50 см.),  Троянда міні - 4 шт., </p>
+                                    </div>
+                                    <div class="product__hover-input">
+                                        <button class="hover__input-prev" id="decreaseBtn" data-counter="counter3">-</button>
+                                        <div class="hover__input-quantity" id="counter3">0</div>
+                                        <button class="hover__input-next"id="increaseBtn" data-counter="counter3">+</button>
+                                        <button class="product__hover-btn">Замовити</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products__block-product">
+                                <div class="block__product-foto">
+                                    <img src="./images/img/product 4.svg" alt="foto" class="block__product-img">
+                                    <img src="./images/logo/heart.svg" alt="foto heart" class="block__product-like">
+                                </div>
+                                <div class="block__product-info">
+                                    <div class="product__info-promotion">Акція</div>
+                                    <div class="product__info-new">Новинка</div>
+                                    <div class="product__info-water">З водою</div>
+                                </div>
+                                <div class="block__product-wrapper">
+                                    <p class="block__product-price">680 ₴</p>
+                                    <p class="block__product-text">Мінібукет 1400-3</p>
+                                </div>
+                                <div class="block__product-hover">
+                                    <div class="product__hover">
+                                        <p class="product__hover-text">Хрезантема - 6 шт. (50 см.),  Троянда міні - 4 шт., </p>
+                                    </div>
+                                    <div class="product__hover-input">
+                                        <button class="hover__input-prev" id="decreaseBtn" data-counter="counter4">-</button>
+                                        <div class="hover__input-quantity"id="counter4">0</div>
+                                        <button class="hover__input-next" id="increaseBtn" data-counter="counter4">+</button>
+                                        <button class="product__hover-btn">Замовити</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products__block-product">
+                                <div class="block__product-foto">
+                                    <img src="./images/img/product 5.svg" alt="foto" class="block__product-img">
+                                    <img src="./images/logo/heart.svg" alt="foto heart" class="block__product-like">
+                                </div>
+                                <div class="block__product-info">
+                                    <div class="product__info-promotion ">Акція</div>
+                                    <div class="product__info-new product__info-activ">Новинка</div>
+                                    <div class="product__info-water">З водою</div>
+                                </div>
+                                <div class="block__product-wrapper">
+                                    <p class="block__product-price">450 ₴</p>
+                                    <p class="block__product-text">«Бархатний сезон»</p>
+                                </div>
+                                <div class="block__product-hover">
+                                    <div class="product__hover">
+                                        <p class="product__hover-text">Хрезантема - 6 шт. (50 см.),  Троянда міні - 4 шт., </p>
+                                    </div>
+                                    <div class="product__hover-input">
+                                        <button class="hover__input-prev" id="decreaseBtn" data-counter="counter5">-</button>
+                                        <div class="hover__input-quantity"id="counter5">0</div>
+                                        <button class="hover__input-next" id="increaseBtn" data-counter="counter5">+</button>
+                                        <button class="product__hover-btn">Замовити</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products__block-product">
+                                <div class="block__product-foto">
+                                    <img src="./images/img/product 6.svg" alt="foto" class="block__product-img">
+                                    <img src="./images/logo/heart.svg" alt="foto heart" class="block__product-like">
+                                </div>
+                                <div class="block__product-info">
+                                    <div class="product__info-promotion ">Акція</div>
+                                    <div class="product__info-new">Новинка</div>
+                                    <div class="product__info-water product__info-activ">З водою</div>
+                                </div>
+                                <div class="block__product-wrapper">
+                                    <p class="block__product-price">56 ₴</p>
+                                    <p class="block__product-text">Нобіліс</p>
+                                </div>
+                                <div class="block__product-hover">
+                                    <div class="product__hover">
+                                        <p class="product__hover-text">Хрезантема - 6 шт. (50 см.),  Троянда міні - 4 шт., </p>
+                                    </div>
+                                    <div class="product__hover-input">
+                                        <button class="hover__input-prev" id="decreaseBtn" data-counter="counter6">-</button>
+                                        <div class="hover__input-quantity"id="counter6">0</div>
+                                        <button class="hover__input-next" id="increaseBtn" data-counter="counter6">+</button>
+                                        <button class="product__hover-btn">Замовити</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="catalog__products-btn">Дивитись всі</button>
+                    </div>
+                </div>
+            </section> 
+            
+            <section class="section__info">
+                <h2 class="section__info-title">Якість в деталях</h2>
+                <div class="section__info-division"></div>
+                <div class="section__info-blocks">
+                    <div class="section__info-block">
+                        <div class="section__info-foto">
+                            <img src="./images/img/info 1.svg" alt="foto" class="info__block-img">
+                        </div>
+                        <div class="section__info-discrition">
+                            <h3 class="info__discrition-title">Контроль свіжості квітів</h3>
+                            <p class="info__discrition-text">Ми співпрацюємо з кращими постачальниками квітів і готові запропонувати Вам <span class="discrition__text-span">широкий асортимент квітів</span> , починаючи від
+                            місцевих сортів і закінчуючи рідкісними імпортованими варіантами.
+                            Ваша близька людина отримає найкращий подарунок, адже ми ретельно підбираємо кожну квітку для вашого букету.</p>
+                        </div>
+                    </div>
+                    <div class="section__info-block">
+                        <div class="section__info-foto">
+                            <img src="./images/img/info 2.svg" alt="foto" class="info__block-img">
+                        </div>
+                        <div class="section__info-discrition">
+                            <h3 class="info__discrition-title">Оформлення букетів</h3>
+                            <p class="info__discrition-text">Ми готові зібрати <span class="discrition__text-span">унікальний букет по індивідуальному замовленню.</span> Наші флористи втілять в життя будь яку Вашу ідею!</p>
+                        </div>
+                    </div>
+                    <div class="section__info-block">
+                        <div class="section__info-foto">
+                            <img src="./images/img/info 3.svg" alt="foto" class="info__block-img">
+                        </div>
+                        <div class="section__info-discrition">
+                            <h3 class="info__discrition-title">Швидка доставка</h3>
+                            <p class="info__discrition-text">Ми робимо доставки по Україні протягом <span class="discrition__text-span">3-х годин</span> з моменту оплати замовлення.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section__form">
+                <h2 class="section__form-title">Не можете визначитись з вибором букету?</h2>
+                <div class="section__form-division"></div>
+                <div class="section__form-form">
+                    <form action="" class="form-discription">
+                        <h3 class="form-title">Відправте заявку <br> і Вам зателефонують <br> протягом однієї хвилини</h3>
+                        <div class="form__input-block">
+                            <input type="text" class="form-input" placeholder="Ім’я">
+                            <div class="form-division">
+                                <img src="./images/logo/form logo1.svg" alt="logo" class="form-logo">
+                            </div>
+                        </div>
+                        <div class="form__input-block">
+                            <input type="tel" class="form-input" placeholder="Телефон">
+                            <div class="form-division">
+                                <img src="./images/logo/form logo2.svg" alt="logo" class="form-logo">
+                            </div>
+                        </div>
+                        <button class="form-btn" id="openPopupBtn" type="button">Залишити заявку</button>
+                    </form>
+                    
+                    <div class="section__form-servis">
+                        <h3 class="form__servis-title">Наш менеджер по телефону:</h3>
+                        <ul class="form__servis-lists">
+                            <li class="form__servis-list">Відповість на будь які запитання</li>
+                            <li class="form__servis-list">Підбере рішення відповідно до ваших запитів та бажань</li>
+                            <li class="form__servis-list">Підготує унікальну пропозицію та детально розповість Вам про наші букети</li>
+                            <li class="form__servis-list">Оформить для Вас подарунок-сюрприз</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section__form-popup">
+                    <img src="./images/logo/Group.svg" alt="popup close" class="form__popup-close">
+                    <div class="form__popup-block">
+                        <h2 class="form__popup-title">Дякуємо!</h2>
+                        <p class="form__popup-text">Найближчим часом наш менеджер звʼяжеться з вами.</p>
+                        <div class="form__popup-division"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section__clients">
+                <h2 class="section__clients-title">Наші клієнти</h2>
+                <div class="section__clients-division"></div>
+                <div class="section__clients-slider">
+                    <img src="./images/img/slider 1.svg" alt="foto" class="clients__slider-img">
+                    <img src="./images/img/slider 2.svg" alt="foto" class="clients__slider-img">
+                    <img src="./images/img/slider 3.svg" alt="foto" class="clients__slider-img">
+                    <img src="./images/img/slider 4.svg" alt="foto" class="clients__slider-img">
+                    <img src="./images/img/slider 1.svg" alt="foto" class="clients__slider-img">
+                    <img src="./images/img/slider 2.svg" alt="foto" class="clients__slider-img">
+                    <img src="./images/img/slider 3.svg" alt="foto" class="clients__slider-img">
+                    <img src="./images/img/slider 4.svg" alt="foto" class="clients__slider-img">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="conteiner">
+            <div class="footer-division"></div>
+            <div class="footer__blocks">
+                <div class="footer__block-nav">
+                    <ul class="block__nav-lists">
+                        <li class="block-nav-list"><a href="#" class="block-nav-linck">Головна</a></li>
+                        <li class="block-nav-list"><a href="#" class="block-nav-linck">Каталог</a></li>
+                        <li class="block-nav-list"><a href="#" class="block-nav-linck">Відгуки</a></li>
+                        <li class="block-nav-list"><a href="#" class="block-nav-linck">Як замовити</a></li>
+                        <li class="block-nav-list"><a href="#" class="block-nav-linck">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="footer__block-logo">
+                    <img src="./images/logo/footer logo.svg" alt="footer logo" class="footer__block-img">
+                    <p class="footer__block-text">FlowerLover</p>
+                    <div class="block__logo-sety">
+                        <a href="#"><img src="./images/logo/icon _phone_.svg" alt="icon _phone" class="logo__sety-img"></a>
+                        <a href="#"><img src="./images/logo/icons insta.svg" alt="icons insta" class="logo__sety-img"></a>
+                        <a href="#"><img src="./images/logo/icon _facebook_.svg" alt="icon _facebook" class="logo__sety-img"></a>
+                    </div>
+                </div>
+                <div class="footer__block-adress">
+                    <p class="footer__block-data">+38097 777 55 77 <br>Наш телефон</p>
+                    <p class="footer__block-data">info@floverlover.ua <br>Контактний е-mail</p>
+                    <p class="footer__block-data">Київ <br> вул. Маріупольська, 14. <br> Наш магазин</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
