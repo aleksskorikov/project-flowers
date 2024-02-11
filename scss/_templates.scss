@@ -1,0 +1,60 @@
+%f1c1 {
+    color: $color;
+    font-family: $font-family1;
+}
+
+%product-info {
+    display: none;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    border: 0.3rem solid $color;
+    border-radius: 1.4rem;
+    color: $color;
+    font-family: $font-family1;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    letter-spacing: 5%;
+    text-transform: uppercase;
+}
+
+%product-info-width {
+    width: 8rem;
+    padding: 0.5rem;
+}
+
+%title {
+    color: $color-title;
+    font-family: $font-family2;
+    font-size: 2.25rem;
+    font-weight: 600;
+    line-height: 3rem;
+}
+
+%flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+%text {
+    color: $color-text;
+    font-family: $font-family1;
+    font-size: 1.25rem;
+    line-height: 1.56rem;
+}
+
+%btn-hover {
+    top: 0;
+    position: relative;
+
+    &:hover {
+        background: $hover-bg;
+        color: $hover-color;
+    }
+
+    &:active {
+        top: 1px;
+    }
+}

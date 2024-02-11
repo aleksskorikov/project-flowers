@@ -2,18 +2,18 @@ $(document).ready(function () {
 	$(".section__clients-slider").slick({
 		slidesToShow: 4,
 		responsive: [
-			{
-				breakpoint: 1100,
-				settings: {
-					slidesToShow: 2,
-				}
-			},
-			{
-				breakpoint: 800,
-				settings: {
-					slidesToShow: 1,
-				}
-			},
+			// {
+			// 	breakpoint: 1100,
+			// 	settings: {
+			// 		slidesToShow: 2,
+			// 	}
+			// },
+			// {
+			// 	breakpoint: 800,
+			// 	settings: {
+			// 		slidesToShow: 1,
+			// 	}
+			// },
 		]
 	});
 });
@@ -74,16 +74,41 @@ document.addEventListener('DOMContentLoaded', function () {
     const popup = document.querySelector('.section__form-popup');
     const form = document.querySelector('.section__form-form');
 
-    openPopupBtn.addEventListener('click', function () {
-        popup.classList.add('show-popup');
-        form.classList.add('hide-form');
-    });
 
     const closePopupBtn = document.querySelector('.form__popup-close');
     closePopupBtn.addEventListener('click', function () {
         popup.classList.remove('show-popup');
         form.classList.remove('hide-form');
     });
+
+    openPopupBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+    
+        let nameInput = document.getElementsByName("name")[0].value;
+        if (nameInput.trim() === "") {
+        document.querySelector(".input__error-name").style.display= "block";
+        return;
+    } else {
+        document.querySelector(".input__error-name").style.display= "none";
+        };
+
+        let phoneInput = document.getElementsByName("tel")[0].value;
+        let phoneValid = /^\d+$/;
+
+        if (!phoneValid.test(phoneInput) || phoneInput.trim() === "") {
+        document.querySelector(".input__error-tel").style.display= "block";
+        return; 
+    } else {
+        document.querySelector(".input__error-tel").style.display= "none";
+    }
+        popup.classList.add('show-popup');
+        form.classList.add('hide-form');
+
+        document.querySelector(".form-discription").reset();
+    });
+
+
+
 
     // =====================лічільник=====================
 
