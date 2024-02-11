@@ -49,11 +49,11 @@ function openCloseDropMenu() {
 };
 openCloseDropMenu();
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () =>{
     const Buttons = document.querySelectorAll('.dropmenu__form-btn');
 
     Buttons.forEach(function (button) {
-        button.addEventListener('click', function () {
+        button.addEventListener('click', () => {
             let category = button.getAttribute('data-category');
             let selectedRadio = document.querySelector(`[name="${category}"]:checked`);
             
@@ -73,39 +73,57 @@ document.addEventListener('DOMContentLoaded', function () {
     const openPopupBtn = document.querySelector('#openPopupBtn');
     const popup = document.querySelector('.section__form-popup');
     const form = document.querySelector('.section__form-form');
-
-
     const closePopupBtn = document.querySelector('.form__popup-close');
-    closePopupBtn.addEventListener('click', function () {
+
+    closePopupBtn.addEventListener('click', () => {
         popup.classList.remove('show-popup');
         form.classList.remove('hide-form');
     });
 
+    function hideNameError() {
+        document.querySelector(".input__error-name").style.display = "none";
+        document.querySelector(".input-name").classList.remove("form-error");
+    }
+
+    function hidePhoneError() {
+        document.querySelector(".input__error-tel").style.display = "none";
+        document.querySelector(".input-tel").classList.remove("form-error");
+    }
+
+    document.getElementsByName("name")[0].addEventListener('input', hideNameError);
+    document.getElementsByName("tel")[0].addEventListener('input', hidePhoneError);
+
     openPopupBtn.addEventListener('click', function (e) {
         e.preventDefault();
-    
-        let nameInput = document.getElementsByName("name")[0].value;
-        if (nameInput.trim() === "") {
-        document.querySelector(".input__error-name").style.display= "block";
+
+    let nameInput = document.getElementsByName("name")[0].value;
+    if (nameInput.trim() === "") {
+        document.querySelector(".input__error-name").style.display = "block";
+        document.querySelector(".input-name").classList.add("form-error");
         return;
     } else {
-        document.querySelector(".input__error-name").style.display= "none";
-        };
-
-        let phoneInput = document.getElementsByName("tel")[0].value;
-        let phoneValid = /^\d+$/;
-
-        if (!phoneValid.test(phoneInput) || phoneInput.trim() === "") {
-        document.querySelector(".input__error-tel").style.display= "block";
-        return; 
-    } else {
-        document.querySelector(".input__error-tel").style.display= "none";
+        hideNameError();
     }
-        popup.classList.add('show-popup');
-        form.classList.add('hide-form');
 
-        document.querySelector(".form-discription").reset();
-    });
+    let phoneInput = document.getElementsByName("tel")[0].value;
+    let phoneValid = /^\d+$/;
+
+    if (phoneInput.trim() === "") {
+        document.querySelector(".input-tel").classList.add("form-error");
+        return;
+    } else if (!phoneValid.test(phoneInput)) {
+        document.querySelector(".input-tel").classList.add("form-error");
+        document.querySelector(".input__error-tel").style.display = "block";
+        return;
+    } else {
+        hidePhoneError(); 
+    }
+
+    popup.classList.add('show-popup');
+    form.classList.add('hide-form');
+
+    document.querySelector(".form-discription").reset();
+});
 
 
 
@@ -116,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const decreaseBtns = document.querySelectorAll('#decreaseBtn');
 
     increaseBtns.forEach(function (increaseBtn) {
-        increaseBtn.addEventListener('click', function () {
+        increaseBtn.addEventListener('click', () => {
             const counterId = increaseBtn.getAttribute('data-counter');
             const counterElement = document.getElementById(counterId);
 
