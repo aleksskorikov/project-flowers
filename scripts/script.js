@@ -2,20 +2,62 @@ $(document).ready(function () {
 	$(".section__clients-slider").slick({
 		slidesToShow: 4,
 		responsive: [
-			// {
-			// 	breakpoint: 1100,
-			// 	settings: {
-			// 		slidesToShow: 2,
-			// 	}
-			// },
-			// {
-			// 	breakpoint: 800,
-			// 	settings: {
-			// 		slidesToShow: 1,
-			// 	}
-			// },
+			{
+				breakpoint: 1025,
+				settings: {
+					slidesToShow: 3,
+				}
+            },
+            {
+				breakpoint: 900,
+				settings: {
+					slidesToShow: 2,
+				}
+            },
+            {
+				breakpoint: 545,
+				settings: {
+					slidesToShow: 1,
+				}
+			},
+			{
+				breakpoint: 413,
+				settings: {
+                    slidesToShow: 1,
+                    arrows: false,
+                    centerMode: true,
+                    focusOnSelect: true
+				}
+			},
 		]
 	});
+});
+
+$(document).ready(function () {
+    function initSlider() {
+        $(".products__block").slick({
+        centerMode: true,
+        slidesToShow: 1,
+        arrows: false,
+        focusOnSelect: true
+        });
+    }
+    function destroySlider() {
+        $(".products__block").slick("unslick");
+    }
+
+    function checkWindowSize() {
+        if ($(window).width() <= 413) {
+        initSlider();
+        } else {
+        destroySlider();
+        }
+    }
+        checkWindowSize();
+
+    $(window).resize(function () {
+        checkWindowSize();
+    });
 });
 
 

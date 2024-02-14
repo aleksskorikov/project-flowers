@@ -9,10 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+    <linc   href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/resets.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
+    <script src="./scripts/swiper.min.js" defer></script>
     <script src="./scripts/jqueri.js" defer></script>
     <script src="./scripts/slick.min.js" defer></script>
     <script src="./scripts/script.js" defer></script>
@@ -35,13 +38,19 @@
                         <li class="header__nav-list"><a href="#" class="header__nav-linc">Контакти</a></li>
                     </ul>
                 </nav>
+                <nav class="header__nav-adaptiv">
+                    <ul class="nav__adaptiv-lists">
+                        <li class="nav__adaptiv-list"><img src="./images/logo/search.svg" alt="" class="nav__adaptiv-img"></li>
+                        <li class="nav__adaptiv-list"><img src="./images/logo/burger-menu.svg" alt="" class="nav__adaptiv-img"></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
 
     <main>
         <div class="conteiner">
-            <section class="one">   
+            <section class="section__one">   
                 <div class="section__title">
                     <p class="section__title-subtitle">Неймовірні</p>
                     <h1 class="section__title-title">Букети<span class="section__title-subtitle ">зі свіжих квітів</span></h1>
@@ -72,7 +81,7 @@
                 <h2 class="section__catalog-title">Каталог</h2>
                 <div class="section__catalog-division"></div>
                 <div class="catalog__products-conteiner">
-                    <div class="catalog__products-block">
+                    <div class="catalog__products-block ">
                         <div class="catalog__products-menu">
                             <h2 class="products__menu-title">Доставка квітів в Києві</h2>
                             <div class="products__menu">
@@ -198,149 +207,149 @@
                     </div>
                     <div class="catalog__products">
                         <h2 class="products__products-title">Хіт продажів</h2>
-                        <div class="products__block">
-                            <div class="products__block-product">
-                                <div class="block__product-block">
-                                    <div class="block__product-foto">
-                                        <img src="./images/logo/product 1.svg" alt="foto" class="block__product-img">
-                                        <img src="./images/logo/heart.svg" alt="foto heart" class="block__product-like">
+                        <div class="products__block "> 
+                                <div class="products__block-product ">
+                                    <div class="block__product-block">
+                                        <div class="block__product-foto">
+                                            <img src="./images/logo/product 1.svg" alt="foto" class="block__product-img">
+                                            <img src="./images/logo/heart.svg" alt="foto heart" class="block__product-like">
+                                        </div>
+                                        <div class="block__product-info">
+                                            <div class="product__info-promotion product__info-activ">Акція</div>
+                                            <div class="product__info-new">Новинка</div>
+                                            <div class="product__info-water">З водою</div>
+                                        </div>
+                                        
+                                        <div class="block__product-wrapper">
+                                            <p class="block__product-price">500 ₴</p>
+                                            <p class="block__product-text">Мінібукет 1400-2</p>
+                                        </div>
                                     </div>
-                                    <div class="block__product-info">
-                                        <div class="product__info-promotion product__info-activ">Акція</div>
-                                        <div class="product__info-new">Новинка</div>
-                                        <div class="product__info-water">З водою</div>
-                                    </div>
-                                    
-                                    <div class="block__product-wrapper">
-                                        <p class="block__product-price">500 ₴</p>
-                                        <p class="block__product-text">Мінібукет 1400-2</p>
-                                    </div>
-                                </div>
-                                <div class="block__product-hover">
-                                    <div class="product__hover">
-                                    <p class="product__hover-text">Хрезантема - 6  шт. (50 см.),  Троянда міні  - 4 шт., </p>
-                                    </div>
-                                    <div class="product__hover-input">
-                                        <button class="hover__input-prev" id="decreaseBtn" data-counter="counter1">-</button>
-                                        <div class="hover__input-quantity"id="counter1">0</div>
-                                        <button class="hover__input-next" id="increaseBtn" data-counter="counter1">+</button>
-                                    <button class="product__hover-btn">Замовити</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="products__block-product">
-                                <div class="block__product-block">
-                                    <div class="block__product-foto">
-                                        <img src="./images/img/product 2.svg" alt="foto" class="block__product-img">
-                                        <img src="./images/logo/heart.svg" alt="foto heart" class="block__product-like">
-                                    </div>
-                                    <div class="block__product-info">
-                                        <div class="product__info-promotion ">Акція</div>
-                                        <div class="product__info-new">Новинка</div>
-                                        <div class="product__info-water">З водою</div>
-                                    </div>
-                                    <div class="block__product-wrapper">
-                                        <p class="block__product-price">800 ₴</p>
-                                        <p class="block__product-text">Мінібукет 1600-6</p>
-                                    </div>
-                                </div>
-                                <div class="block__product-hover">
-                                    <div class="product__hover">
-                                        <p class="product__hover-text">Хрезантема - 6 шт. (50 см.),  Троянда міні - 4 шт., </p>
-                                    </div>
-                                    <div class="product__hover-input">
-                                        <button class="hover__input-prev" id="decreaseBtn" data-counter="counter2">-</button>
-                                        <div class="hover__input-quantity"id="counter2">0</div>
-                                        <button class="hover__input-next" id="increaseBtn" data-counter="counter2">+</button>
+                                    <div class="block__product-hover">
+                                        <div class="product__hover">
+                                        <p class="product__hover-text">Хрезантема - 6  шт. (50 см.),  Троянда міні  - 4 шт., </p>
+                                        </div>
+                                        <div class="product__hover-input">
+                                            <button class="hover__input-prev" id="decreaseBtn" data-counter="counter1">-</button>
+                                            <div class="hover__input-quantity"id="counter1">0</div>
+                                            <button class="hover__input-next" id="increaseBtn" data-counter="counter1">+</button>
                                         <button class="product__hover-btn">Замовити</button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="products__block-product">
-                                <div class="block__product-block">
-                                    <div class="block__product-foto">
-                                        <img src="./images/img/product 3.svg" alt="foto" class="block__product-img">
-                                        <img src="./images/logo/heart.svg" alt="foto heart" class="block__product-like">
+                                <div class="products__block-product ">
+                                    <div class="block__product-block ">
+                                        <div class="block__product-foto">
+                                            <img src="./images/img/product 2.svg" alt="foto" class="block__product-img">
+                                            <img src="./images/logo/heart.svg" alt="foto heart" class="block__product-like">
+                                        </div>
+                                        <div class="block__product-info">
+                                            <div class="product__info-promotion ">Акція</div>
+                                            <div class="product__info-new">Новинка</div>
+                                            <div class="product__info-water">З водою</div>
+                                        </div>
+                                        <div class="block__product-wrapper">
+                                            <p class="block__product-price">800 ₴</p>
+                                            <p class="block__product-text">Мінібукет 1600-6</p>
+                                        </div>
                                     </div>
-                                    <div class="block__product-info">
-                                        <div class="product__info-promotion ">Акція</div>
-                                        <div class="product__info-new">Новинка</div>
-                                        <div class="product__info-water">З водою</div>
-                                    </div>
-                                    <div class="block__product-wrapper">
-                                        <p class="block__product-price">1000 ₴</p>
-                                        <p class="block__product-text">Троянда Freedom 51 шт.</p>
-                                    </div>
-                                </div>
-                                <div class="block__product-hover">
-                                    <div class="product__hover">
-                                        <p class="product__hover-text">Хрезантема - 6 шт. (50 см.),  Троянда міні - 4 шт., </p>
-                                    </div>
-                                    <div class="product__hover-input">
-                                        <button class="hover__input-prev" id="decreaseBtn" data-counter="counter3">-</button>
-                                        <div class="hover__input-quantity" id="counter3">0</div>
-                                        <button class="hover__input-next"id="increaseBtn" data-counter="counter3">+</button>
-                                        <button class="product__hover-btn">Замовити</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="products__block-product">
-                                <div class="block__product-block">
-                                    <div class="block__product-foto">
-                                        <img src="./images/img/product 4.svg" alt="foto" class="block__product-img">
-                                        <img src="./images/logo/heart.svg" alt="foto heart" class="block__product-like">
-                                    </div>
-                                    <div class="block__product-info">
-                                        <div class="product__info-promotion">Акція</div>
-                                        <div class="product__info-new">Новинка</div>
-                                        <div class="product__info-water">З водою</div>
-                                    </div>
-                                    <div class="block__product-wrapper">
-                                        <p class="block__product-price">680 ₴</p>
-                                        <p class="block__product-text">Мінібукет 1400-3</p>
+                                    <div class="block__product-hover">
+                                        <div class="product__hover">
+                                            <p class="product__hover-text">Хрезантема - 6 шт. (50 см.),  Троянда міні - 4 шт., </p>
+                                        </div>
+                                        <div class="product__hover-input">
+                                            <button class="hover__input-prev" id="decreaseBtn" data-counter="counter2">-</button>
+                                            <div class="hover__input-quantity"id="counter2">0</div>
+                                            <button class="hover__input-next" id="increaseBtn" data-counter="counter2">+</button>
+                                            <button class="product__hover-btn">Замовити</button>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="block__product-hover">
-                                    <div class="product__hover">
-                                        <p class="product__hover-text">Хрезантема - 6 шт. (50 см.),  Троянда міні - 4 шт., </p>
+                                <div class="products__block-product ">
+                                    <div class="block__product-block">
+                                        <div class="block__product-foto">
+                                            <img src="./images/img/product 3.svg" alt="foto" class="block__product-img">
+                                            <img src="./images/logo/heart.svg" alt="foto heart" class="block__product-like">
+                                        </div>
+                                        <div class="block__product-info">
+                                            <div class="product__info-promotion ">Акція</div>
+                                            <div class="product__info-new">Новинка</div>
+                                            <div class="product__info-water">З водою</div>
+                                        </div>
+                                        <div class="block__product-wrapper">
+                                            <p class="block__product-price">1000 ₴</p>
+                                            <p class="block__product-text">Троянда Freedom 51 шт.</p>
+                                        </div>
                                     </div>
-                                    <div class="product__hover-input">
-                                        <button class="hover__input-prev" id="decreaseBtn" data-counter="counter4">-</button>
-                                        <div class="hover__input-quantity"id="counter4">0</div>
-                                        <button class="hover__input-next" id="increaseBtn" data-counter="counter4">+</button>
-                                        <button class="product__hover-btn">Замовити</button>
+                                    <div class="block__product-hover">
+                                        <div class="product__hover">
+                                            <p class="product__hover-text">Хрезантема - 6 шт. (50 см.),  Троянда міні - 4 шт., </p>
+                                        </div>
+                                        <div class="product__hover-input">
+                                            <button class="hover__input-prev" id="decreaseBtn" data-counter="counter3">-</button>
+                                            <div class="hover__input-quantity" id="counter3">0</div>
+                                            <button class="hover__input-next"id="increaseBtn" data-counter="counter3">+</button>
+                                            <button class="product__hover-btn">Замовити</button>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="products__block-product"> 
+                                    <div class="block__product-block">
+                                        <div class="block__product-foto">
+                                            <img src="./images/img/product 4.svg" alt="foto" class="block__product-img">
+                                            <img src="./images/logo/heart.svg" alt="foto heart" class="block__product-like">
+                                        </div>
+                                        <div class="block__product-info">
+                                            <div class="product__info-promotion">Акція</div>
+                                            <div class="product__info-new">Новинка</div>
+                                            <div class="product__info-water">З водою</div>
+                                        </div>
+                                        <div class="block__product-wrapper">
+                                            <p class="block__product-price">680 ₴</p>
+                                            <p class="block__product-text">Мінібукет 1400-3</p>
+                                        </div>
+                                    </div>
+                                    <div class="block__product-hover">
+                                        <div class="product__hover">
+                                            <p class="product__hover-text">Хрезантема - 6 шт. (50 см.),  Троянда міні - 4 шт., </p>
+                                        </div>
+                                        <div class="product__hover-input">
+                                            <button class="hover__input-prev" id="decreaseBtn" data-counter="counter4">-</button>
+                                            <div class="hover__input-quantity"id="counter4">0</div>
+                                            <button class="hover__input-next" id="increaseBtn" data-counter="counter4">+</button>
+                                            <button class="product__hover-btn">Замовити</button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="products__block-product">
-                                <div class="block__product-block">
-                                    <div class="block__product-foto">
-                                        <img src="./images/img/product 5.svg" alt="foto" class="block__product-img">
-                                        <img src="./images/logo/heart.svg" alt="foto heart" class="block__product-like">
+                                <div class="products__block-product">
+                                    <div class="block__product-block">
+                                        <div class="block__product-foto">
+                                            <img src="./images/img/product 5.svg" alt="foto" class="block__product-img">
+                                            <img src="./images/logo/heart.svg" alt="foto heart" class="block__product-like">
+                                        </div>
+                                        <div class="block__product-info">
+                                            <div class="product__info-promotion ">Акція</div>
+                                            <div class="product__info-new product__info-activ">Новинка</div>
+                                            <div class="product__info-water">З водою</div>
+                                        </div>
+                                        <div class="block__product-wrapper">
+                                            <p class="block__product-price">450 ₴</p>
+                                            <p class="block__product-text">«Бархатний сезон»</p>
+                                        </div>
                                     </div>
-                                    <div class="block__product-info">
-                                        <div class="product__info-promotion ">Акція</div>
-                                        <div class="product__info-new product__info-activ">Новинка</div>
-                                        <div class="product__info-water">З водою</div>
-                                    </div>
-                                    <div class="block__product-wrapper">
-                                        <p class="block__product-price">450 ₴</p>
-                                        <p class="block__product-text">«Бархатний сезон»</p>
+                                    <div class="block__product-hover">
+                                        <div class="product__hover">
+                                            <p class="product__hover-text">Хрезантема - 6 шт. (50 см.),  Троянда міні - 4 шт., </p>
+                                        </div>
+                                        <div class="product__hover-input">
+                                            <button class="hover__input-prev" id="decreaseBtn" data-counter="counter5">-</button>
+                                            <div class="hover__input-quantity"id="counter5">0</div>
+                                            <button class="hover__input-next" id="increaseBtn" data-counter="counter5">+</button>
+                                            <button class="product__hover-btn">Замовити</button>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="block__product-hover">
-                                    <div class="product__hover">
-                                        <p class="product__hover-text">Хрезантема - 6 шт. (50 см.),  Троянда міні - 4 шт., </p>
-                                    </div>
-                                    <div class="product__hover-input">
-                                        <button class="hover__input-prev" id="decreaseBtn" data-counter="counter5">-</button>
-                                        <div class="hover__input-quantity"id="counter5">0</div>
-                                        <button class="hover__input-next" id="increaseBtn" data-counter="counter5">+</button>
-                                        <button class="product__hover-btn">Замовити</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="products__block-product">
+                                <div class="products__block-product">
                                 <div class="block__product-block">
                                     <div class="block__product-foto">
                                         <img src="./images/img/product 6.svg" alt="foto" class="block__product-img">
@@ -375,36 +384,38 @@
             </section> 
             
             <section class="section__info">
-                <h2 class="section__info-title">Якість в деталях</h2>
-                <div class="section__info-division"></div>
-                <div class="section__info-blocks">
-                    <div class="section__info-block">
-                        <div class="section__info-foto">
-                            <img src="./images/img/info 1.svg" alt="foto" class="info__block-img">
+                <div class="info-conteiner">
+                    <h2 class="section__info-title">Якість в деталях</h2>
+                    <div class="section__info-division"></div>
+                    <div class="section__info-blocks">
+                        <div class="section__info-block">
+                            <div class="section__info-foto">
+                                <img src="./images/img/info 1.svg" alt="foto" class="info__block-img">
+                            </div>
+                            <div class="section__info-discrition">
+                                <h3 class="info__discrition-title">Контроль свіжості квітів</h3>
+                                <p class="info__discrition-text">Ми співпрацюємо з кращими постачальниками квітів і готові запропонувати Вам <span class="discrition__text-span">широкий асортимент квітів</span> , починаючи від
+                                місцевих сортів і закінчуючи рідкісними імпортованими варіантами.
+                                Ваша близька людина отримає найкращий подарунок, адже ми ретельно підбираємо кожну квітку для вашого букету.</p>
+                            </div>
                         </div>
-                        <div class="section__info-discrition">
-                            <h3 class="info__discrition-title">Контроль свіжості квітів</h3>
-                            <p class="info__discrition-text">Ми співпрацюємо з кращими постачальниками квітів і готові запропонувати Вам <span class="discrition__text-span">широкий асортимент квітів</span> , починаючи від
-                            місцевих сортів і закінчуючи рідкісними імпортованими варіантами.
-                            Ваша близька людина отримає найкращий подарунок, адже ми ретельно підбираємо кожну квітку для вашого букету.</p>
+                        <div class="section__info-block">
+                            <div class="section__info-foto">
+                                <img src="./images/img/info 2.svg" alt="foto" class="info__block-img">
+                            </div>
+                            <div class="section__info-discrition">
+                                <h3 class="info__discrition-title">Оформлення букетів</h3>
+                                <p class="info__discrition-text">Ми готові зібрати <span class="discrition__text-span">унікальний букет по індивідуальному замовленню.</span> Наші флористи втілять в життя будь яку Вашу ідею!</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="section__info-block">
-                        <div class="section__info-foto">
-                            <img src="./images/img/info 2.svg" alt="foto" class="info__block-img">
-                        </div>
-                        <div class="section__info-discrition">
-                            <h3 class="info__discrition-title">Оформлення букетів</h3>
-                            <p class="info__discrition-text">Ми готові зібрати <span class="discrition__text-span">унікальний букет по індивідуальному замовленню.</span> Наші флористи втілять в життя будь яку Вашу ідею!</p>
-                        </div>
-                    </div>
-                    <div class="section__info-block">
-                        <div class="section__info-foto">
-                            <img src="./images/img/info 3.svg" alt="foto" class="info__block-img">
-                        </div>
-                        <div class="section__info-discrition">
-                            <h3 class="info__discrition-title">Швидка доставка</h3>
-                            <p class="info__discrition-text">Ми робимо доставки по Україні протягом <span class="discrition__text-span">3-х годин</span> з моменту оплати замовлення.</p>
+                        <div class="section__info-block">
+                            <div class="section__info-foto">
+                                <img src="./images/img/info 3.svg" alt="foto" class="info__block-img">
+                            </div>
+                            <div class="section__info-discrition">
+                                <h3 class="info__discrition-title">Швидка доставка</h3>
+                                <p class="info__discrition-text">Ми робимо доставки по Україні протягом <span class="discrition__text-span">3-х годин</span> з моменту оплати замовлення.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -457,14 +468,14 @@
                 <h2 class="section__clients-title">Наші клієнти</h2>
                 <div class="section__clients-division"></div>
                 <div class="section__clients-slider">
-                    <img src="./images/img/slider 1.svg" alt="foto" class="clients__slider-img">
-                    <img src="./images/img/slider 2.svg" alt="foto" class="clients__slider-img">
-                    <img src="./images/img/slider 3.svg" alt="foto" class="clients__slider-img">
-                    <img src="./images/img/slider 4.svg" alt="foto" class="clients__slider-img">
-                    <img src="./images/img/slider 1.svg" alt="foto" class="clients__slider-img">
-                    <img src="./images/img/slider 2.svg" alt="foto" class="clients__slider-img">
-                    <img src="./images/img/slider 3.svg" alt="foto" class="clients__slider-img">
-                    <img src="./images/img/slider 4.svg" alt="foto" class="clients__slider-img">
+                    <div class="client__slider-block"><img src="./images/img/slider 1.svg" alt="foto" class="clients__slider-img"></div>
+                    <div class="client__slider-block"><img src="./images/img/slider 2.svg" alt="foto" class="clients__slider-img"></div>
+                    <div class="client__slider-block"><img src="./images/img/slider 3.svg" alt="foto" class="clients__slider-img"></div>
+                    <div class="client__slider-block"><img src="./images/img/slider 4.svg" alt="foto" class="clients__slider-img"></div>
+                    <div class="client__slider-block"><img src="./images/img/slider 1.svg" alt="foto" class="clients__slider-img"></div>
+                    <div class="client__slider-block"><img src="./images/img/slider 2.svg" alt="foto" class="clients__slider-img"></div>
+                    <div class="client__slider-block"><img src="./images/img/slider 3.svg" alt="foto" class="clients__slider-img"></div>
+                    <div class="client__slider-block"><img src="./images/img/slider 4.svg" alt="foto" class="clients__slider-img"></div>
                 </div>
             </section>
         </div>
@@ -476,7 +487,7 @@
             <div class="footer__blocks">
                 <div class="footer__block-nav">
                     <ul class="block__nav-lists">
-                        <li class="block-nav-list"><a href="#" class="block-nav-linck">Головна</a></li>
+                        <li class="block-nav-list"><a href="#" class="block-nav-linck block__nav-activ">Головна</a></li>
                         <li class="block-nav-list"><a href="#" class="block-nav-linck">Каталог</a></li>
                         <li class="block-nav-list"><a href="#" class="block-nav-linck">Відгуки</a></li>
                         <li class="block-nav-list"><a href="#" class="block-nav-linck">Як замовити</a></li>
@@ -484,8 +495,10 @@
                     </ul>
                 </div>
                 <div class="footer__block-logo">
-                    <img src="./images/logo/footer logo.svg" alt="footer logo" class="footer__block-img">
-                    <p class="footer__block-text">FlowerLover</p>
+                    <div class="block-logo">
+                        <img src="./images/logo/footer logo.svg" alt="footer logo" class="footer__block-img">
+                        <p class="footer__block-text">FlowerLover</p>
+                    </div>
                     <div class="block__logo-sety">
                         <a href="#"><img src="./images/logo/icon _phone_.svg" alt="icon _phone" class="logo__sety-img"></a>
                         <a href="#"><img src="./images/logo/icons insta.svg" alt="icons insta" class="logo__sety-img"></a>
