@@ -58,6 +58,14 @@
   top: 1px;
 }
 
+.product__promotion-text {
+  color: rgb(255, 255, 255);
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 0.94rem;
+}
+
 body {
   background-color: rgb(0, 0, 0);
 }
@@ -450,6 +458,18 @@ body {
 
 .products__block-product:hover .block__product-hover {
   height: 100%;
+}
+
+.block__product-promotion {
+  display: none;
+}
+
+.product__promotion-text {
+  background: rgb(169, 59, 89);
+  padding: 0.8rem;
+  border-radius: 1.5rem;
+  max-width: 15rem;
+  margin: auto;
 }
 
 .product__hover {
@@ -1071,6 +1091,12 @@ body {
 @media (max-width: 431px) {
   .block__product-like {
     margin: -13rem -10rem 0 0;
+  }
+  .block__product-wrapper {
+    margin-top: 1rem;
+  }
+  .block__product-promotion {
+    display: block;
   }
 }
 @media (max-width: 413px) {

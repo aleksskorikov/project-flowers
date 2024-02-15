@@ -275,6 +275,12 @@
     .block__product-like {
         margin: -13rem -10rem 0 0;
     }
+    .block__product-wrapper {
+        margin-top: 1rem;
+    }
+    .block__product-promotion {
+        display: block;
+    }
 }
 
 
@@ -298,7 +304,7 @@
     }
 
     .section__title {
-        background: rgba(255, 255, 255, 0.6);
+        background:$section-titlebg-adaptiv;
         order: 2;
         margin: 1rem -2rem -1rem -1rem;
         padding-left: 3rem;

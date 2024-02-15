@@ -424,7 +424,18 @@ body{
     height: 100%;
     
 }
+.block__product-promotion{
+    display: none;
+}
 
+.product__promotion-text{
+    @extend %promotion-text;
+    background: $color-title;
+    padding: 0.8rem;
+    border-radius: 1.5rem;
+    max-width: 15rem;
+    margin:auto;
+}
 .product__hover{
     background: $menu-activ;
 }
