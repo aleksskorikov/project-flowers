@@ -165,6 +165,15 @@ document.addEventListener('DOMContentLoaded', () =>{
     form.classList.add('hide-form');
 
     document.querySelector(".form-discription").reset();
+        
+    const dropMenu = document.querySelector(".header__nav-dropmenu")
+    const dropMenuOpen = document.querySelector("#header__burger-menu").addEventListener("click", () => {
+        dropMenu.style.display = "block";
+        console.log("nnn");
+    });
+    const dropMenuCloze = document.querySelector(".dropmenu-btn").addEventListener("click", () => {
+        dropMenu.style.display = "none";
+    });
 });
 
 
