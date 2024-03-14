@@ -166,17 +166,16 @@ document.addEventListener('DOMContentLoaded', () =>{
 
     document.querySelector(".form-discription").reset();
         
-    const dropMenu = document.querySelector(".header__nav-dropmenu")
-    const dropMenuOpen = document.querySelector("#header__burger-menu").addEventListener("click", () => {
-        dropMenu.style.display = "block";
-        console.log("nnn");
+});
+
+    const dropMenu = document.querySelector(".header__nav-dropmenu");
+    const dropMenuOpen = document.querySelector(".header__burger-menu");
+        dropMenuOpen.addEventListener("click", () => {
+        dropMenu.style = "display:block";
     });
     const dropMenuCloze = document.querySelector(".dropmenu-btn").addEventListener("click", () => {
         dropMenu.style.display = "none";
     });
-});
-
-
 
 
     // =====================лічільник=====================
